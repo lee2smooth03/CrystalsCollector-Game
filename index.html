@@ -7,8 +7,14 @@
 	<!-- latest compiled and minified CSS 	-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	
+	<!-- every style sheet known to man -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- link to jQuery and my personal .js file(s) -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type ="text/javascript" src="games.js"></script>
 
 </head>
 <body>
@@ -20,99 +26,109 @@
 			<!-- add two buttons to the tron: -->
 				<!-- "Start Game" -->
 				<!-- "Brand New"  -->
-						<!-- <div>Nobody</div> -->
+	
 				<div class="jumbotron">
   					<h1>Welcome to the Bootcamp Game:</h1>
 	  				<h1><small>Crystal Collectors</small></h1>
 
   					<p>
   						<a class="btn btn-primary btn-lg jmbtn" href="#" role="button">New Game</a>
-  						<a class="btn btn-primary btn-lg jmbtn" href="#" role="button">Retry</a>
+  						<a class="btn btn-primary btn-lg jmbtn" href="#" role="button">Reset Me</a>
   					</p>
 
 				</div>
 
-				
-
-				<div class="panel panel-default">
-  					<div class="panel-heading ph">
-    					<h3 class="panel-title" id="theme"></h3>
-  					</div>
-
-				</div>
 
 		<!-- add new row that contains panels -->
 				<!-- crystal pics -->
 				<!-- random selec -->
-				<div>Arthur is the Best</div>
 
 				
 				<!-- separate in columns -->
 				<div class="row">
 					
-					<div class="col-md-6">
+					<div class="col-md-8">
 					<!-- separate in columns -->
 
-						<div class="panel panel-default">
-		  					<div class="panel-heading">
+						<div> <!-- class="panel panel-default">-->
+		  					<!-- <div class="panel-heading">
 		    					<h3 class="panel-title"><strong>[[ Click The Crystals Below ]]</strong></h3>
-		  					</div>
+		  					</div> -->
 							
 							<!-- add a row of crystals -->
-							<div class="row">
+							<div class="row picRow">
 
 								<div class="col-md-3">
 
-								    <a href="#" class="thumbnail">
-								      <img src="..." alt="...">
+								    <a href="#">
+								      <img src="assets/images/Black Crystal.png" alt="Crystals Noir" class="img-thumbnail lex">
 								    </a>
 								</div>
 
 								<div class="col-md-3">
 
-								    <a href="#" class="thumbnail">
-								      <img src="..." alt="...">
+								    <a href="#">
+								      <img src="assets/images/Gold Crystal.png" alt="Shiny Crystals" class="img-thumbnail lex">
 								    </a>
 								</div>
 
 								<div class="col-md-3">
 
-								    <a href="#" class="thumbnail">
-								      <img src="..." alt="...">
+								    <a href="#">
+								      <img src="assets/images/Green Crystal.png" alt="Money Stones" class="img-thumbnail lex">
 								    </a>
 								</div>
 
 								<div class="col-md-3">
 
-								    <a href="#" class="thumbnail">
-								      <img src="..." alt="...">
+								    <a href="#">
+								      <img src="assets/images/Red Crystal.png" alt="Red Rock" class="img-thumbnail lex">
 								    </a>
 								</div>								
 
-							</div>
+							</div> <!-- close the row of crystals -->
 
 			  			</div>
 
 					</div>
 
 
-					<div class="col-md-6">
+					<div class="col-md-2">
 					<!-- separate in columns -->
 
 						<div class="panel panel-default">
 		  					<div class="panel-heading">
-		    					<h3 class="panel-title">Panel title</h3>
+		    					<h3 class="panel-title"><strong>Your Score</strong></h3>
 		  					</div>
 
-			  				<div class="panel-body">
-			    				Panel content
+			  				<div class="panel-body lng">
+			    				<p class="guess">Panel content</p>
 			  				</div>
 						</div>
+					</div>
 
+
+					<div class="col-md-2">
+					<!-- separate in columns -->
+
+						<div class="panel panel-danger">
+		  					<div class="panel-heading">
+		    					<h3 class="panel-title"><strong>Target Score</strong></h3>
+		  					</div>
+
+			  				<div class="panel-body lng">
+			    				<p class="guess">Panel content</p>
+			  				</div>
+						</div>
 					</div>
 					
 
 				</div><!-- close out the rows -->
+
+				<div class="row">
+					<div class="col-md-4 wins"><h1 class="guess">Wins:</h1></div>
+					<div class="col-md-4 loss"><h1 class="guess">Losses:</h1></div>
+				</div>
 
 	</div> <!-- container div -->
 

@@ -8,3 +8,30 @@
 
 	background-color: #ccc;
 }
+
+.picRow{
+
+	height: 120px;
+	/*text-align: center;*/
+	align-content: center;
+}
+
+.lex{
+
+	height: 100px;
+	width: 100px;
+}
+
+.lng{
+
+	height: 100px;
+	text-align: center;
+	/*vertical-align: middle;*/
+}
+
+.guess{
+
+	font-size: 2em;
+	font-weight: 900;
+
+}
