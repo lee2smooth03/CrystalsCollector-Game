@@ -14,7 +14,7 @@
 
 	<!-- link to jQuery and my personal .js file(s) -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-	<script type ="text/javascript" src="games.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 <body>
@@ -32,8 +32,8 @@
 	  				<h1><small>Crystal Collectors</small></h1>
 
   					<p>
-  						<a class="btn btn-primary btn-lg jmbtn" href="#" role="button">New Game</a>
-  						<a class="btn btn-primary btn-lg jmbtn" href="#" role="button">Reset Me</a>
+  						<a id="NewGame" class="btn btn-primary btn-lg jmbtn" href="#" role="button">New Game</a>
+  						<a id="ResetMe" class="btn btn-primary btn-lg jmbtn" href="#" role="button">Reset Me</a>
   					</p>
 
 				</div>
@@ -60,28 +60,28 @@
 
 								<div class="col-md-3">
 
-								    <a href="#">
+								    <a href="#" id="black1">
 								      <img src="assets/images/Black Crystal.png" alt="Crystals Noir" class="img-thumbnail lex">
 								    </a>
 								</div>
 
 								<div class="col-md-3">
 
-								    <a href="#">
+								    <a href="#" id="gold1">
 								      <img src="assets/images/Gold Crystal.png" alt="Shiny Crystals" class="img-thumbnail lex">
 								    </a>
 								</div>
 
 								<div class="col-md-3">
 
-								    <a href="#">
+								    <a href="#" id="green1">
 								      <img src="assets/images/Green Crystal.png" alt="Money Stones" class="img-thumbnail lex">
 								    </a>
 								</div>
 
 								<div class="col-md-3">
 
-								    <a href="#">
+								    <a href="#" id="red1">
 								      <img src="assets/images/Red Crystal.png" alt="Red Rock" class="img-thumbnail lex">
 								    </a>
 								</div>								
@@ -102,7 +102,7 @@
 		  					</div>
 
 			  				<div class="panel-body lng">
-			    				<p class="guess">Panel content</p>
+			    				<p class="guess" id="myGuess">Panel content</p>
 			  				</div>
 						</div>
 					</div>
@@ -117,7 +117,7 @@
 		  					</div>
 
 			  				<div class="panel-body lng">
-			    				<p class="guess">Panel content</p>
+			    				<p class="guess" id="targetNum">Panel content</p>
 			  				</div>
 						</div>
 					</div>
@@ -126,8 +126,8 @@
 				</div><!-- close out the rows -->
 
 				<div class="row">
-					<div class="col-md-4 wins"><h1 class="guess">Wins:</h1></div>
-					<div class="col-md-4 loss"><h1 class="guess">Losses:</h1></div>
+					<div class="col-md-4" id="wins"><h1 class="guess">Wins:</h1></div>
+					<div class="col-md-4" id="loss"><h1 class="guess">Losses:</h1></div>
 				</div>
 
 	</div> <!-- container div -->
